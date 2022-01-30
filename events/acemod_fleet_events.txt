@@ -4687,8 +4687,6 @@ fleet_event = {
 							is_planet_class = pc_infested
 							is_planet_class = pc_ai
 							has_planet_flag = acemod_planet_flag_colonizer_target
-						}
-						NOT = {
 							has_planet_flag = acemod_planet_flag_colonizer_target_ignore
 						}
 					}
@@ -4843,8 +4841,6 @@ fleet_event = {
 							is_planet_class = pc_infested
 							is_planet_class = pc_ai
 							has_planet_flag = acemod_planet_flag_colonizer_target
-						}
-						NOT = {
 							has_planet_flag = acemod_planet_flag_colonizer_target_ignore
 						}
 					}
