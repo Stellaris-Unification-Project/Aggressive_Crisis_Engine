@@ -796,7 +796,7 @@ country_event = {
 					which = acemod_crisis_manager_var_country_num_human_players_live
 					value = 0
 				}
-				every_country = {
+				every_playable_country = {
 					limit = {
 						is_ai = no
 					}
@@ -1644,7 +1644,7 @@ country_event = {
 				country_event = {
 					id = crisis.10
 				}
-				random_country = {
+				random_playable_country = {
 					limit = {
 						is_country_type = default
 					}
@@ -3174,7 +3174,7 @@ country_event = {
 					which = acemod_crisis_manager_var_country_num_human_players_start
 					value = 0
 				}
-				every_country = {
+				every_playable_country = {
 					limit = {
 						is_ai = no
 					}

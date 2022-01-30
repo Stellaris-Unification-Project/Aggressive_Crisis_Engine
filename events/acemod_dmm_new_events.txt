@@ -50,7 +50,7 @@ event = {
 			dmm_hide_button_all = {
 				DMM_FLAG = acemod_aggressive_crisis_engine_menu_name_flag				# Hide Dynamic Mod Menu button for all countries.
 			}
-			every_country = {
+			every_playable_country = {
 				limit = {
 					is_ai = no					# Iterate through every player country. Too early for the game to trigger check country_flags.
 				}

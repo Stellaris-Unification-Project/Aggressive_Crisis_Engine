@@ -42,7 +42,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -91,7 +91,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -140,7 +140,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -189,7 +189,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -238,7 +238,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -287,7 +287,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -336,7 +336,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -385,7 +385,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -434,7 +434,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -483,7 +483,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -532,7 +532,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -581,7 +581,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -630,7 +630,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -679,7 +679,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -728,7 +728,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -777,7 +777,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -826,7 +826,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -875,7 +875,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -924,7 +924,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -973,7 +973,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1022,7 +1022,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1071,7 +1071,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1120,7 +1120,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1169,7 +1169,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1218,7 +1218,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1267,7 +1267,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1316,7 +1316,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1365,7 +1365,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1414,7 +1414,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1463,7 +1463,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1512,7 +1512,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1561,7 +1561,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1610,7 +1610,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1659,7 +1659,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1708,7 +1708,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1757,7 +1757,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1806,7 +1806,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1855,7 +1855,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1904,7 +1904,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}
@@ -1953,7 +1953,7 @@ acemod_crisis_manager_calculate_prethoryn_effect = {
 						}
 					}
 					set_global_flag = acemod_crisis_manager_prethoryn_spawn_skip_mtth_fired
-					random_country = {
+					random_playable_country = {
 						limit = {
 							is_country_type = default
 						}

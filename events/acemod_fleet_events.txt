@@ -116,12 +116,9 @@ event = {
 				NOT = {
 					has_country_flag = acemod_assisted_ai
 				}
-				NOT = {
-					check_variable = {
+				check_variable = {
 						which = acemod_var_country_piloted_exclusion
-						value = 1
-					}
-				}
+						value != 1 }
 				# is_country_type = gray
 				# is_country_type = gray_goo				# A Deadly Tempest mod.
 			}
@@ -423,12 +420,9 @@ event = {
 				}
 				if = {
 					limit = {
-						NOT = {
-							check_variable = {
+						check_variable = {
 								which = acemod_var_fleet_piloted_exclusion
-								value = 1
-							}
-						}
+								value != 1 }
 					}
 					if = {
 						limit = {
@@ -1047,7 +1041,7 @@ fleet_event = {
 								limit = {
 									exists = owner
 									owner = {
-										is_same_value = prev.owner
+										is_same_empire = prev.owner
 									}
 									is_ship_class = shipclass_military
 									is_fleet_idle = yes
@@ -1069,7 +1063,7 @@ fleet_event = {
 								limit = {
 									exists = owner
 									owner = {
-										is_same_value = prev.owner
+										is_same_empire = prev.owner
 									}
 									is_ship_class = shipclass_military
 									is_fleet_idle = yes
@@ -1091,7 +1085,7 @@ fleet_event = {
 								limit = {
 									exists = owner
 									owner = {
-										is_same_value = prev.owner
+										is_same_empire = prev.owner
 									}
 									is_ship_class = shipclass_military
 									is_fleet_idle = yes
@@ -1155,7 +1149,7 @@ fleet_event = {
 									exists = owner
 									owner = {
 										NOR = {
-											is_same_value = root.owner
+											is_same_empire = root.owner
 											is_country_type = fallen_empire
 										}
 										is_hostile = root.owner
@@ -1230,14 +1224,14 @@ fleet_event = {
 						OR = {
 							owner = {
 								NOR = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									is_country_type = fallen_empire
 								}
 								is_hostile = root.owner
 							}
 							AND = {
 								owner = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 								}
 								NOT = {
 									exists = starbase									# Shortcut to check if system is under siege without iterating through planets.
@@ -1258,21 +1252,21 @@ fleet_event = {
 							AND = {
 								has_star_flag = extradimensional_origin_system								# Unbidden don't need to target own portal system.
 								owner = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									# has_country_flag = unbidden
 								}
 							}
 							AND = {
 								has_star_flag = extradimensional_second_portal_system								# Aberrant don't need to target own portal system.
 								owner = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									# has_country_flag = aberrant
 								}
 							}
 							AND = {
 								has_star_flag = extradimensional_third_portal_system								# Vehement don't need to target own portal system.
 								owner = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									# has_country_flag = vehement
 								}
 							}
@@ -1327,7 +1321,7 @@ fleet_event = {
 						OR = {
 							owner = {
 								NOR = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									is_country_type = fallen_empire
 								}
 								is_hostile = root.owner
@@ -1335,7 +1329,7 @@ fleet_event = {
 							}
 							AND = {
 								owner = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 								}
 								NOT = {
 									exists = starbase									# Shortcut to check if system is under siege without iterating through planets.
@@ -1356,21 +1350,21 @@ fleet_event = {
 							AND = {
 								has_star_flag = extradimensional_origin_system								# Unbidden don't need to target own portal system.
 								owner = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									# has_country_flag = unbidden
 								}
 							}
 							AND = {
 								has_star_flag = extradimensional_second_portal_system								# Aberrant don't need to target own portal system.
 								owner = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									# has_country_flag = aberrant
 								}
 							}
 							AND = {
 								has_star_flag = extradimensional_third_portal_system								# Vehement don't need to target own portal system.
 								owner = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									# has_country_flag = vehement
 								}
 							}
@@ -1418,7 +1412,7 @@ fleet_event = {
 						OR = {
 							owner = {
 								NOR = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									is_country_type = fallen_empire
 								}
 								is_hostile = root.owner
@@ -1426,7 +1420,7 @@ fleet_event = {
 							}
 							AND = {
 								owner = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 								}
 								NOT = {
 									exists = starbase									# Shortcut to check if system is under siege without iterating through planets.
@@ -1447,21 +1441,21 @@ fleet_event = {
 							AND = {
 								has_star_flag = extradimensional_origin_system								# Unbidden don't need to target own portal system.
 								owner = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									# has_country_flag = unbidden
 								}
 							}
 							AND = {
 								has_star_flag = extradimensional_second_portal_system								# Aberrant don't need to target own portal system.
 								owner = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									# has_country_flag = aberrant
 								}
 							}
 							AND = {
 								has_star_flag = extradimensional_third_portal_system								# Vehement don't need to target own portal system.
 								owner = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									# has_country_flag = vehement
 								}
 							}
@@ -1544,7 +1538,7 @@ fleet_event = {
 					has_access_fleet = root.owner
 					owner = {
 						NOT = {
-							is_same_value = root.owner							# Removed exclusion for Fallen Empires.
+							is_same_empire = root.owner							# Removed exclusion for Fallen Empires.
 						}
 						is_hostile = root.owner
 					}
@@ -1629,14 +1623,14 @@ fleet_event = {
 						OR = {
 							owner = {
 								NOR = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									is_country_type = fallen_empire
 								}
 								is_hostile = root.owner
 							}
 							AND = {
 								owner = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 								}
 								NOT = {
 									exists = starbase									# Shortcut to check if system is under siege without iterating through planets.
@@ -1731,7 +1725,7 @@ fleet_event = {
 							exists = owner
 							owner = {
 								NOR = {
-									is_same_value = root.owner
+									is_same_empire = root.owner
 									is_country_type = fallen_empire
 								}
 								is_hostile = root.owner
@@ -1739,7 +1733,7 @@ fleet_event = {
 							# Commented out for performance.
 							# AND = {
 							# 	owner = {
-							# 		is_same_value = root.owner
+							# 		is_same_empire = root.owner
 							# 	}
 							# 	NOT = {
 							# 		exists = starbase									# Shortcut to check if system is under siege without iterating through planets.
@@ -1837,7 +1831,7 @@ fleet_event = {
 										exists = owner
 										owner = {
 											NOR = {
-												is_same_value = root.owner
+												is_same_empire = root.owner
 												is_country_type = fallen_empire
 											}
 											is_hostile = root.owner
@@ -2128,7 +2122,7 @@ fleet_event = {
 						is_ship_class = shipclass_military
 						owner = {
 							NOT = {
-								is_same_value = root.owner
+								is_same_empire = root.owner
 							}
 							has_country_flag = acemod_assisted_ai
 							is_hostile = root.owner
@@ -2827,12 +2821,9 @@ country_event = {
 				}
 				if = {
 					limit = {
-						NOT = {
-							check_variable = {
+						check_variable = {
 								which = acemod_var_fleet_piloted_exclusion
-								value = 1
-							}
-						}
+								value != 1 }
 					}
 					root.from = {
 						remove_star_flag = acemod_star_flag_solar_system_target@prev
@@ -2942,12 +2933,9 @@ event = {
 			}
 			every_owned_fleet = {
 				limit = {
-					NOT = {
-						check_variable = {
+					check_variable = {
 							which = acemod_var_fleet_piloted_exclusion
-							value = 1
-						}
-					}
+							value != 1 }
 					is_fleet_idle = yes
 					is_ship_class = shipclass_constructor
 				}
@@ -2990,7 +2978,7 @@ fleet_event = {
 								has_fleet_flag = acemod_fleet_flag_starbase_construction_fleet
 							}
 							owner = {
-								is_same_value = root.owner
+								is_same_empire = root.owner
 							}
 						}
 					}
@@ -3238,10 +3226,8 @@ fleet_event = {
 			if = {
 				limit = {
 					owner = {
-						OR = {
-							is_country_type = fallen_empire
-							is_country_type = awakened_fallen_empire
-						}
+						
+							is_fallen_empire = yes
 					}
 				}
 				solar_system = {
@@ -3403,7 +3389,7 @@ fleet_event = {
 											has_fleet_flag = acemod_fleet_flag_starbase_construction_fleet
 										}
 										owner = {
-											is_same_value = root.owner
+											is_same_empire = root.owner
 										}
 									}
 									any_fleet_in_system = {
@@ -3491,7 +3477,7 @@ fleet_event = {
 										has_fleet_flag = acemod_fleet_flag_starbase_construction_fleet
 									}
 									owner = {
-										is_same_value = root.owner
+										is_same_empire = root.owner
 									}
 								}
 							}
@@ -3555,12 +3541,9 @@ event = {
 			limit = {
 				has_country_flag = acemod_assisted_ai
 				has_country_flag = acemod_constructor_reinforcements
-				NOT = {
-					check_variable = {
+				check_variable = {
 						which = acemod_var_country_constructor_reinforcements_exclusion
-						value = 1
-					}
-				}
+						value != 1 }
 			}
 			country_event = {
 				id = acemod_fleet.351				# Delayed for performance.
@@ -3777,12 +3760,9 @@ country_event = {
 					is_country_type = extradimensional_3
 					is_country_type = ai_empire
 				}
-				NOT = {
-					check_variable = {
+				check_variable = {
 						which = acemod_var_country_constructor_reinforcements_exclusion
-						value = 1
-					}
-				}
+						value != 1 }
 			}
 			random_system_within_border = {
 				limit = {
@@ -3881,12 +3861,9 @@ event = {
 			}
 			every_owned_fleet = {
 				limit = {
-					NOT = {
-						check_variable = {
+					check_variable = {
 							which = acemod_var_fleet_piloted_exclusion
-							value = 1
-						}
-					}
+							value != 1 }
 					is_fleet_idle = yes
 					is_ship_class = shipclass_transport
 				}
@@ -3915,7 +3892,7 @@ fleet_event = {
 		# 				is_colony = yes
 		# 				owner = {
 		# 					NOT = {
-		# 						is_same_value = root.owner
+		# 						is_same_empire = root.owner
 		# 					}
 		# 				}
 		# 				NOT = {
@@ -3937,7 +3914,7 @@ fleet_event = {
 						is_colony = yes
 						owner = {
 							NOT = {
-								is_same_value = root.owner
+								is_same_empire = root.owner
 							}
 							OR = {
 								is_hostile = root.owner
@@ -4190,7 +4167,7 @@ fleet_event = {
 					# 				is_colony = yes
 					# 				owner = {
 					# 					NOT = {
-					# 						is_same_value = root.owner
+					# 						is_same_empire = root.owner
 					# 					}
 					# 				}
 					# 				NOT = {
@@ -4315,7 +4292,7 @@ fleet_event = {
 								is_colony = yes
 								owner = {
 									NOT = {
-										is_same_value = root.owner
+										is_same_empire = root.owner
 									}
 									is_hostile = root.owner
 								}
@@ -4495,7 +4472,7 @@ planet_event = {
 			kill_pop = yes			# Just to be sure.
 		}
 		destroy_colony = yes
-		every_country = {
+		every_playable_country = {
 			limit = {
 				has_event_chain = "ai_crisis_chain"
 			}
@@ -4649,12 +4626,9 @@ event = {
 			}
 			every_owned_fleet = {
 				limit = {
-					NOT = {
-						check_variable = {
+					check_variable = {
 							which = acemod_var_fleet_piloted_exclusion
-							value = 1
-						}
-					}
+							value != 1 }
 					is_fleet_idle = yes
 					is_ship_class = shipclass_colonizer
 				}
@@ -4683,7 +4657,7 @@ fleet_event = {
 		# 				is_colony = yes
 		# 				owner = {
 		# 					NOT = {
-		# 						is_same_value = root.owner
+		# 						is_same_empire = root.owner
 		# 					}
 		# 				}
 		# 				NOT = {
@@ -4703,7 +4677,7 @@ fleet_event = {
 				solar_system = {
 					exists = owner
 					owner = {
-						is_same_value = root.owner
+						is_same_empire = root.owner
 					}
 					any_system_planet = {
 						habitable_planet = yes
@@ -4712,8 +4686,6 @@ fleet_event = {
 						NOR = {
 							is_planet_class = pc_infested
 							is_planet_class = pc_ai
-						}
-						NOT = {
 							has_planet_flag = acemod_planet_flag_colonizer_target
 						}
 						NOT = {
@@ -4861,7 +4833,7 @@ fleet_event = {
 					}
 					exists = owner
 					owner = {
-						is_same_value = root.owner
+						is_same_empire = root.owner
 					}
 					any_system_planet = {
 						habitable_planet = yes
@@ -4870,8 +4842,6 @@ fleet_event = {
 						NOR = {
 							is_planet_class = pc_infested
 							is_planet_class = pc_ai
-						}
-						NOT = {
 							has_planet_flag = acemod_planet_flag_colonizer_target
 						}
 						NOT = {
@@ -4964,12 +4934,9 @@ event = {
 			limit = {
 				is_country_type = ai_empire
 				has_country_flag = acemod_assisted_ai
-				NOT = {
-					check_variable = {
+				check_variable = {
 						which = acemod_var_country_defensive_jumpdrive_protocol_exclusion
-						value = 1
-					}
-				}
+						value != 1 }
 			}
 			every_system_within_border = {
 				limit = {
@@ -5040,12 +5007,9 @@ fleet_event = {
 				has_star_flag = acemod_star_flag_defensive_jumpdrive_protocol_cooldown
 			}
 			owner = {
-				NOT = {
-					check_variable = {
+				check_variable = {
 						which = acemod_var_country_defensive_jumpdrive_protocol_exclusion
-						value = 1
-					}
-				}
+						value != 1 }
 			}
 		}
 		NOT = {
@@ -5142,7 +5106,7 @@ fleet_event = {
 						any_fleet_in_system = {
 							has_fleet_flag = acemod_fleet_flag_defensive_jumpdrive_protocol_cooldown
 							owner = {
-								is_same_value = root.owner
+								is_same_empire = root.owner
 							}
 						}
 					}
@@ -6062,12 +6026,9 @@ event = {
 					NOT = {
 						has_fleet_order = destroy_planet_order
 					}
-					NOT = {
-						check_variable = {
+					check_variable = {
 							which = acemod_var_fleet_piloted_exclusion
-							value = 1
-						}
-					}
+							value != 1 }
 				}
 				fleet_event = {
 					id = acemod_fleet.705
@@ -6103,7 +6064,7 @@ fleet_event = {
 								is_colony = yes
 								owner = {
 									NOT = {
-										is_same_value = root.owner
+										is_same_empire = root.owner
 									}
 									# OR = {
 									is_hostile = root.owner
@@ -6113,10 +6074,10 @@ fleet_event = {
 								controller = {
 									OR = {
 										NOT = {
-											is_same_value = root.owner
+											is_same_empire = root.owner
 										}
 										AND = {
-											is_same_value = root.owner
+											is_same_empire = root.owner
 											root.owner = {
 												is_crisis_faction = yes												# Crises should kill even controlled planets for maximum speed.
 											}
@@ -6157,10 +6118,10 @@ fleet_event = {
 									controller = {
 										OR = {
 											NOT = {
-												is_same_value = root.owner
+												is_same_empire = root.owner
 											}
 											AND = {
-												is_same_value = root.owner
+												is_same_empire = root.owner
 												root.owner = {
 													is_crisis_faction = yes													# Crises should kill even controlled planets for maximum speed.
 												}
@@ -6264,7 +6225,7 @@ fleet_event = {
 					limit = {
 						exists = owner
 						owner = {
-							is_same_value = root.owner
+							is_same_empire = root.owner
 						}
 						is_ship_class = shipclass_military
 						NOT = {
@@ -6594,12 +6555,9 @@ country_event = {
 										has_country_flag = acemod_country_flag_disabled_colossus_ai
 									}
 								}
-								NOT = {
-									check_variable = {
+								check_variable = {
 										which = acemod_var_fleet_piloted_exclusion
-										value = 1
-									}
-								}
+										value != 1 }
 							}
 							fleet_event = {
 								id = acemod_fleet.705
@@ -6637,12 +6595,9 @@ country_event = {
 											has_country_flag = acemod_country_flag_disabled_colossus_ai
 										}
 									}
-									NOT = {
-										check_variable = {
+									check_variable = {
 											which = acemod_var_fleet_piloted_exclusion
-											value = 1
-										}
-									}
+											value != 1 }
 								}
 								fleet_event = {
 									id = acemod_fleet.705

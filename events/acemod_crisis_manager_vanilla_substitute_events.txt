@@ -438,8 +438,7 @@ country_event = {
 			limit = {
 				OR = {
 					is_country_type = default
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
+					is_fallen_empire = yes
 					is_country_type = ascended_empire	# ACOT Override.
 					is_country_type = lost_empire		# ACOT Override.
 					# Below triggers are acemod added.
@@ -547,7 +546,7 @@ country_event = {
 			limit = {
 				is_country_type = extradimensional
 			}
-			every_country = {
+			every_playable_country = {
 				limit = {
 					has_event_chain = "extradimensional_invasion_chain"
 				}
@@ -562,7 +561,7 @@ country_event = {
 			limit = {
 				is_country_type = extradimensional_2
 			}
-			every_country = {
+			every_playable_country = {
 				limit = {
 					has_event_chain = "extradimensional_invasion_chain_2"
 				}
@@ -577,7 +576,7 @@ country_event = {
 			limit = {
 				is_country_type = extradimensional_3
 			}
-			every_country = {
+			every_playable_country = {
 				limit = {
 					has_event_chain = "extradimensional_invasion_chain_3"
 				}
@@ -605,11 +604,7 @@ country_event = {
 				}
 			}
 			if = {
-				limit = {
-					owner = {
-						is_same_value = event_target:extradimensionals3
-					}
-				}
+				limit = { is_owned_by = event_target:extradimensionals3 }
 				if = {
 					limit = {
 						has_star_flag = acemod_crisis_manager_star_flag_starbase_exd@event_target:extradimensionals
